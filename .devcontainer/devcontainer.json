@@ -1,18 +1,19 @@
 {
-	"name": "Node.js",
-	"build": {
-		"dockerfile": "Dockerfile",
-	},
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"dbaeumer.vscode-eslint"
-			]
-		}
-	},
-	"postCreateCommand": "yarn install",
-	"remoteUser": "node",
-	"features": {
-		"sshd": "latest"
-	}
+  "name": "Boilerplate",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "christian-kohler.npm-intellisense",
+        "christian-kohler.path-intellisense",
+        "dbaeumer.vscode-eslint",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "ziyasal.vscode-open-in-github"
+      ]
+    }
+  },
+  "postCreateCommand": "yarn install",
+  "remoteUser": "node"
 }
